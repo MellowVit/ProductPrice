@@ -3,7 +3,7 @@
 This microservice obtains information about a product of a brand.   
 Specifically gets the final sale price and applicable price list by a given date.  
   
-##HOW TO RUN  
+## HOW TO RUN  
 - Open project on your IDE  
 - Go to Run - Edit Configurations menu
 - Add new configuration of type 'Application'
@@ -17,7 +17,7 @@ brandId: number
 productId: number    
 applicationDate: LocalDateTime, format: yyyy-MM-ddThh:mm
   
-##ECOMMERCEDB - H2 IN-MEMORY DATABASE    
+## ECOMMERCEDB - H2 IN-MEMORY DATABASE    
 Application uses an H2 in-memory database.
 It has a table called PRICES.  
 When application is run, four rows are automatically inserted.  
@@ -30,7 +30,7 @@ UserName: admin
 Password:  
 - Credentials can be edited on application.yml file on resources package of Price-Launcher module.
   
-##SERVICE INFORMATION   
+## SERVICE INFORMATION   
 This service is based on a hexagonal architecture and DDD. This ensures the re-usability of the business logic by making it technical-agnostic.    
 The Domain layer is the core of the architecture and should not be affected by a stack change, it dependes on nothing but himself.  
 This service lives on a multi-module spring boot project.   
@@ -40,6 +40,6 @@ These modules are:
 - Infrastructure:  Communicates with the database.
 - Price-Launcher: Bootstrap all the modules.
   
-##UNIT TESTS   
+## UNIT TESTS   
 Each module has a battery of unit tests.  
 In Application module there are unit tests for Test1 to Test5 requested cases.
